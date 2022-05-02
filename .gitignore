@@ -1,2 +1,4 @@
-config.cfg
-database.db
+*.cfg
+*.db
+/config.cfg
+/database.db
