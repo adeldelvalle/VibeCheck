@@ -1,4 +1,2 @@
 *.cfg
 *.db
-/config.cfg
-/database.db
