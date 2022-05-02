@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Welcome to VibeCheck {% endblock %}</h1>
+    {% for result in results %}
+        <a href="#">
+            <h2>{{ result }}</h2>
+        </a>
+        <span class="badge badge-primary">{{ result['items'] }}</span>
+        <hr>
+    {% endfor %}
+    <form action="/forward/" method="post"><button name="forwardBtn" type="submit" class="spot">{% block button %} Connect to Spotify {% endblock %}
+    </button>
+    </form>
+
+{% endblock %}
